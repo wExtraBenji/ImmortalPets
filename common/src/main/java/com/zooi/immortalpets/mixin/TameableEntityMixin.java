@@ -3,6 +3,7 @@ package com.zooi.immortalpets.mixin;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.TameableEntity;
+import net.minecraft.entity.passive.AbstractHorseEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -17,7 +18,7 @@ public class TameableEntityMixin {
         if (source.getType().equals(animal.getWorld().getDamageSources().genericKill().getType()))
             return;
 
-        if (animal instanceof TameableEntity pet && pet.isTamed()) {
+        if (animal instanceof TameableEntity pet && pet.isTamed()) || (animal instanceof AbstractHorseEntity pet && pet.isTame()) {
             cir.setReturnValue(false);
             cir.cancel();
         }
