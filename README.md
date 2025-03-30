@@ -1,5 +1,7 @@
-Every tamed animal becomes immune to all damage, making them immortal. The only exception is the `/kill` command, but nobody is that cruel.
+This is just me messing around to see if I can figure out how to get this working for 1.21.5. I've never coded mc mod stuff before so uhhhhh
+maybe go talk to the original dev lmao don't hold your breath on this
 
-I made this mod because I've always been reluctant to tame animals in Minecraft in fear of losing them. I know they're not real but it still feels bad. Now they are invincible.
-
+Original
+|
+v
 [Modrinth page](https://modrinth.com/project/immortal-pets)
